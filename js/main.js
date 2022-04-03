@@ -12,4 +12,22 @@ const burgerMenu = () => {
   })
 };
 
+const modalTrailer = () => {
+  const modalOpen = document.querySelector('.modal');
+  const buttonPlay = document.querySelector('.main__button-play');
+
+  buttonPlay.addEventListener('click', () => {
+    modalOpen.classList.add('active');
+  })
+
+  modalOpen.addEventListener('click', (e) => {
+    const isModal = e.target.closest('.modal__inner');
+
+    if (!isModal) {
+    modalOpen.classList.remove('active');
+    };
+  });
+};
+
 burgerMenu();
+modalTrailer();
