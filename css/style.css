@@ -79,7 +79,8 @@ img {
   cursor: pointer;
 }
 
-.header__logo:hover {
+.header__logo:hover,
+.header__socials-icon:hover {
   transform: scale(1.1);
 }
 
@@ -113,10 +114,6 @@ img {
 
 .header__socials-icon:not(:last-child) {
   margin-right: 2.1rem;
-}
-
-.header__socials-icon:hover {
-  transform: scale(1.1);
 }
 
 .header__nav-mobile,
@@ -243,6 +240,10 @@ img {
   border-radius: 50%;
 }
 
+.main__button-play img:hover {
+  transform: scale(1.03);
+}
+
 /* .main__button-play {
   position: absolute;
   right: 15.2rem;
@@ -281,6 +282,10 @@ img {
   /* font-size: 14px; */
   /* line-height: 16px; */
   /* line-height: 114%; */
+}
+
+.main__button:hover {
+  transform: scale(1.01);
 }
 
 /* Slider */
